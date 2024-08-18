@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to the World of Magician Dipanka Rajbongshi. Here you can book for your next Event as your Wedding Entertainment, Corporate Event, Launch Party, Birthday Parties, Any Cultural Event, Street Magic, Stage Shows plus much more."
+    />
+    <meta name="author" content="Dipanka Rajbongshi" />
+    <title>Dipanka Rajbongshi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bio.css" />
+    <link rel="stylesheet" href="contact.css" />
+    
+
+    <style></style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header_content" id="blur">
+        <!-- <a href="#" class="logo">Dipanka Rajbongshi</a> -->
+
+        <nav class="navbar">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="/" class="nav_link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="/reaction.html" class="nav_link">Public Reaction</a>
+            </li>
+            <li class="nav_item">
+              <a href="/bio.html" class="nav_link">Bio</a>
+            </li>
+            <li class="nav_item">
+              <button class="openButton" onclick="openPopup()">
+                Contact Us
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <h2 class="heading">Who is Dipanka Rajbongshi?</h2>
+
+    <div class="bio">
+      <blockquote class="blockquote">
+        "I want to travel the world as much as I can in life and entertain
+        people. Hope we leave everyone with a magical moment that they will
+        never forget ..."
+      </blockquote>
+      <div class="para">
+        <p>
+          In Nalbari(Assam) born Dipanka Rajbongshi, who began his magic career
+          at the age of 20 on receiving a deck of cards from his parents.
+        </p>
+        <br />
+        <p>
+          There was no looking back; Dipanka's talent was unmistakable. Entirely
+          self- taught, he carried his cards with him everywhere, he learn basic
+          magic from youtube and then he start to break down the senior
+          magician's great magic.
+        </p>
+        <br />
+        <p>
+          As he continued practicing, his confidence and ability increased. 
+          He was praised by his family for his technique and hand craft at his home. He
+          was able to create a curious situation among the students and friends
+          of his institute.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("openForm")
+        .addEventListener("click", function () {
+          document.getElementById("popupForm").classList.toggle("show");
+        });
+    </script>
+
+    <footer class="footer">
+      <div class="footer_content">
+        <ul class="socialMedia">
+          <li class="socialMedia_item">
+            <a
+              href="https://www.facebook.com/dipanka.rajbongshi.52?mibextid=ZbWKwL"
+              class="socialMedia_link"
+              ><img class="socialMedia_facebook" src="/icons/facebookR.png" alt
+            /></a>
+          </li>
+          <li class="socialMedia_item">
+            <a
+              href="https://x.com/Dipankaraj01?t=ehA5i0iJDpgMYvE0VEdFWA&s=08"
+              class="socialMedia_link"
+              ><img class="socialMedia_x" src="/icons/X-twitterR.png" alt
+            /></a>
+          </li>
+          <li class="socialMedia_item">
+            <a id="logo" onclick="openPopup()"
+              ><img id="bookNowImage" src="/images/BookNow.png" alt="Book Now"
+            /></a>
+          </li>
+          <li class="socialMedia_item">
+            <a
+              href="https://www.instagram.com/dipanka_rajbongshi/"
+              class="socialMedia_link"
+              ><img
+                class="socialMedia_instagram"
+                src="/icons/instagramR.png"
+                alt
+            /></a>
+          </li>
+          <li class="socialMedia_item">
+            <a
+              href="https://youtube.com/@talentrajbongshi5196?si=5-aP2lYrwV4Dt0kq"
+              class="socialMedia_link"
+              ><img class="socialMedia_youtube" src="/icons/youtubeR.png" alt
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="borderLine"></span>
+        <form method="post" action="" name="contact-form">
+          <h1>Contact Us</h1>
+          <h4>Call Now: +919365316224</h4>
+          <h4>Email: magiciandipanka@gmail.com</h4>
+          <div class="inputBox">
+            <input type="text" id="name" name="Name" required="required" />
+            <span>Name</span>
+            <i></i>
+          </div>
+
+          <div class="inputBox">
+            <input type="email" id="email" name="Email" required="required" />
+            <span>Email</span>
+            <i></i>
+          </div>
+
+          <div class="inputBox">
+            <input type="text" id="mobile" name="Phone" required="required" />
+            <span>Phone No</span>
+            <i></i>
+          </div>
+
+          <div class="inputBox">
+            <h4>Type Your Message Here...</h4>
+            <textarea
+              id="message" name="Message"
+              placeholder="How can we help you ?"
+              required
+            ></textarea>
+          </div>
+          <div class="button">
+            <button type="submit" id="submitButton">Send</button>
+            <button class="closeButton" onclick="closePopup()">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="googleSheet.js"></script>
+  </body>
+</html>

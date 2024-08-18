@@ -1,0 +1,68 @@
+/* Bio page  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+  background-image: url(/images/MagicianPic.png);
+  font-family: "Inter", sans-serif;
+  padding-top: 60px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  z-index: -1;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bio {
+  color: white;
+  margin-bottom: 20px;
+  display: block;
+  padding: 0 40px 10px;
+  line-height: 1.4;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-style: italic;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 20px 0 50px;
+  font-family: "smileOcean";
+  word-spacing: 10px;
+  font-size: 50px;
+  color: #fff;
+}
+
+.blockquote {
+  text-align: center;
+  margin: 0 200px 0px;
+  font-size: 30px;
+}
+
+.para {
+  text-align: center;
+  margin: 45px 90px 30px;
+  font-size: 22px;
+}

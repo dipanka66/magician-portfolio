@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to the World of Magician Dipanka Rajbongshi. Here you can book for your next Event as your Wedding Entertainment, Corporate Event, Launch Party, Birthday Parties, Any Cultural Event, Street Magic, Stage Shows plus much more."
+    />
+    <meta name="author" content="Dipanka Rajbongshi" />
+    <meta name="keywords" content="Dipanka, Rajbongshi, magic, magician, mind reader, mind reading, mentalist, mentalism" />
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Dipanka Rajbongshi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+
+    <style></style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header_content" id="blur">
+        <!-- <a href="#" class="logo">Dipanka Rajbongshi</a> -->
+
+        <nav class="navbar">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="/" class="nav_link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="/show.html" class="nav_link">Show</a>
+            </li>
+            <li class="nav_item">
+              <a href="/reaction.html" class="nav_link">Public Reaction</a>
+            </li>
+            <li class="nav_item">
+              <a href="/bio.html" class="nav_link">Bio</a>
+            </li>
+            <li class="nav_item">
+              <button class="openButton" onclick="openPopup()">
+                Contact Us
+              </button>
+            </li>
+            <i class="fa-solid fa-xmark"></i>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+
+  
+      </div>
+    </header>
+<div class="dipanka">
+  <h1>Dipanka</h1>
+  <h1>Rajbongshi</h1>
+
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer_content">
+        <ul class="socialMedia">
+          <li class="socialMedia_item">
+            <a
+              href="https://www.facebook.com/dipanka.rajbongshi.52?mibextid=ZbWKwL"
+              class="socialMedia_link"
+              ><img class="socialMedia_facebook" src="/icons/facebookR.png" alt
+            /></a>
+          </li>
+          <li class="socialMedia_item">
+            <a
+              href="https://x.com/Dipankaraj01?t=ehA5i0iJDpgMYvE0VEdFWA&s=08"
+              class="socialMedia_link"
+              ><img class="socialMedia_x" src="/icons/X-twitterR.png" alt
+            /></a>
+          </li>
+          <li class="socialMedia_item">
+            <a id="logo" onclick="openPopup()"
+              ><img id="bookNowImage" src="/images/BookNow.png" alt="Book Now"
+            /></a>
+          </li>
+          <li class="socialMedia_item">
+            <a
+              href="https://www.instagram.com/dipanka_rajbongshi/"
+              class="socialMedia_link"
+              ><img
+                class="socialMedia_instagram"
+                src="/icons/instagramR.png"
+                alt
+            /></a>
+          </li>
+          <li class="socialMedia_item">
+            <a
+              href="https://youtube.com/@talentrajbongshi5196?si=5-aP2lYrwV4Dt0kq"
+              class="socialMedia_link"
+              ><img class="socialMedia_youtube" src="/icons/youtubeR.png" alt
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Popup Form -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="borderLine"></span>
+        <form method="post" action="" name="contact-form">
+          <h1>Contact Us</h1>
+          <h4>Call Now: +919365316224</h4>
+          <h4>Email: magiciandipanka@gmail.com</h4>
+          <div class="inputBox">
+            <input type="text" id="name" name="Name" required="required" />
+            <span>Name</span>
+            <i></i>
+          </div>
+
+          <div class="inputBox">
+            <input type="email" id="email" name="Email" required="required" />
+            <span>Email</span>
+            <i></i>
+          </div>
+
+          <div class="inputBox">
+            <input type="text" id="mobile" name="Phone" required="required" />
+            <span>Phone No</span>
+            <i></i>
+          </div>
+
+          <div class="inputBox">
+            <h4>Type Your Message Here...</h4>
+            <textarea
+              id="message"
+              name="Message"
+              placeholder="How can we help you ?"
+              required
+            ></textarea>
+          </div>
+          <div class="button">
+            <button type="submit" id="submitButton">Send</button>
+            <button class="closeButton" onclick="closePopup()">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+
+    <script src="main.js"></script>
+    <script src="googleSheet.js"></script>
+  </body>
+</html>
